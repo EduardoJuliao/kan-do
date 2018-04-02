@@ -14,11 +14,15 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { Ng2IziToastModule } from 'ng2-izitoast';
 import { TaskService } from './services/task.service';
 import { TaskListComponent } from './tasks/tasklist.component';
+import { TaskComponent } from './tasks/task.component';
+import { ShortenStringPipe } from './pipes/shortenStringPipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TaskListComponent
+    TaskComponent,
+    TaskListComponent,
+    ShortenStringPipe
   ],
   imports: [
     BrowserModule,

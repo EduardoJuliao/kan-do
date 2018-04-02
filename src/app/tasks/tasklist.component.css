@@ -6,7 +6,29 @@
 
 .list{
     height: 90vh;
-    width: 300px;
+    width: 400px;
     background-color: gray;
     margin: 5px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: 0 0 10px 10px;
+}
+
+.list > .header{
+    text-transform: uppercase;
+    text-align: center;
+    padding: 5px;
+    font-size: 28px;
+}
+
+.list > .footer{
+    background-color: rgb(184,184,190);
+    height: 48px;
+    border-radius: 0 0 10px 10px;
+    position: relative;
+}
+
+.task-holder{
+    padding: 10px;
+    height: 74vh;
 }

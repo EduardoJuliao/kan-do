@@ -1,0 +1,38 @@
+.card{ 
+    background-color: #fff;
+    padding: 5px;
+    min-height: 150px;
+    margin: 10px;
+    border-radius: 0 0 10px 10px;
+    border-left: 5px solid;
+
+    cursor: move; /* fallback if grab cursor is unsupported */
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+
+ /* (Optional) Apply a "closed-hand" cursor during drag operation. */
+ .card:active { 
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 0.5;
+}
+
+.card-tags-holder{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-tags-tag{
+    flex: 0 1;
+    
+}
+
+.card-footer{ 
+}
+
+.card-footer > span :hover{
+    cursor: pointer;
+}

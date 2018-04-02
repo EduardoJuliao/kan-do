@@ -1,0 +1,28 @@
+<div class="card" [style.border-color]="getColorPriority()">
+    <h4>{{task.name}}</h4>
+    <div>{{task.description | shortenString:30 }}</div>
+
+    <div *ngIf="task.tags != undefined && task.tags.length > 0" class="card-tags-holder">
+        <span class="label card-tags-tag" *ngFor="let tag of task.tags">
+            {{tag.name}}
+        </span>
+    </div>
+
+    <hr/>
+    <div class="card-footer">
+        {{task.whenCreated | date:'dd/MM/yyyy'}}
+        <br/>
+        <span *ngIf="task.comments != undefined && task.comments.length > 0">
+            <a 
+            (click)="showComments()">
+                <i class="mdi mdi-24px mdi-comment-multiple"></i>
+            </a>
+        </span>
+        <span *ngIf="task.subTasks != undefined && task.subTasks.length > 0">
+            <a >
+                <i class="mdi mdi-24px mdi-pencil-box"></i>
+            </a>
+        </span>
+    </div>
+</div>
+ 

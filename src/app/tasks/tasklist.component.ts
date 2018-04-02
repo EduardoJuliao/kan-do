@@ -1,6 +1,7 @@
-import { TaskListModel } from './../models/tasklist.model';
 import { TaskService } from './../services/task.service';
 import { Component, OnInit } from '@angular/core';
+import { DragulaService } from 'ng2-dragula';
+import { ITaskList } from '../models/ITaskList';
 
 @Component({
     selector: 'app-task-list',
@@ -9,10 +10,12 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class TaskListComponent implements OnInit {
-    taskLists: TaskListModel[];
+    taskLists: ITaskList[];
     
-    constructor(tService: TaskService) { 
+    constructor(tService: TaskService,
+    dService: DragulaService) { 
         this.taskLists = tService.getMyTaskList();
+       
     }
 
     ngOnInit() { 
