@@ -1,0 +1,11 @@
+<div class="list-container">
+        <div class="list" *ngFor="let taskList of taskLists">
+                list: {{taskList.name}}
+                <div *ngFor="let task of taskList.tasks">
+                    task: {{task.name}}
+                </div>
+            </div>
+</div>
+
+
+

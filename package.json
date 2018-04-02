@@ -24,6 +24,7 @@
     "@mdi/font": "^2.2.43",
     "@ngx-translate/core": "^10.0.1",
     "@ngx-translate/http-loader": "^3.0.1",
+    "chance": "^1.0.13",
     "core-js": "^2.4.1",
     "ng2-dragula": "^1.5.0",
     "ng2-izitoast": "^1.0.1",

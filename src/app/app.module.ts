@@ -12,10 +12,13 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { Ng2IziToastModule } from 'ng2-izitoast';
+import { TaskService } from './services/task.service';
+import { TaskListComponent } from './tasks/tasklist.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TaskListComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +36,8 @@ import { Ng2IziToastModule } from 'ng2-izitoast';
     })
   ],
   providers: [
-    MessageService
+    MessageService,
+    TaskService
   ],
   bootstrap: [AppComponent]
 })

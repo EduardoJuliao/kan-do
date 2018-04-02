@@ -1,0 +1,12 @@
+.list-container{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 5px;
+}
+
+.list{
+    height: 90vh;
+    width: 300px;
+    background-color: gray;
+    margin: 5px;
+}
