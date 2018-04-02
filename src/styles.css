@@ -1,0 +1,4 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~izitoast/dist/css/iziToast.min.css';
+@import '~dragula/dist/dragula.min.css';
+@import '~@mdi/font/css/materialdesignicons.min.css'
